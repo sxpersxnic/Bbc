@@ -4,7 +4,7 @@ Berufsbildungscenter Zürich
 
 ## ÜKs
 
-- [Ük 223 Spring](https://github.com/sxpersxnic/Bbc/tree/main/Üks/294-Spring)
+- [Ük 223 Spring](https://github.com/sxpersxnic/Bbc/tree/main/Üks/223-Spring)
 - [Ük 294 Web](https://github.com/sxpersxnic/Bbc/tree/main/Üks/294-Web)
 - [Ük 295 Spring](https://github.com/sxpersxnic/Bbc/tree/main/Üks/295-Spring)
 - [Ük 335 Mobile](https://github.com/sxpersxnic/Bbc/tree/main/Üks/335-Mobile)
