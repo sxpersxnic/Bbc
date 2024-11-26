@@ -1,0 +1,291 @@
+/* Font: Chakra Petch*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@media (max-width: 768px) {
+
+    /* Show mobile content*/
+    .mobile-only {
+        display: block;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+    /* Set font, background color, foreground color, margin */
+
+    html, body {
+        font-family: "Chakra Petch", sans-serif;
+        line-height: 1.6;
+        background-color: #f8f9fa; 
+        color: #333; 
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 40px;
+        overflow-x: hidden;
+    }
+
+    main {
+        background-color: #fff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        margin: 60px 40px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        height: 80px;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+
+    .project {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .page, .navbar-desktop, .dropdown-ctn, .dropdown-label, .dropdown-content {
+        display: none;
+    }
+
+    
+    .bar-top, .bar-center, .bar-bottom {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 2px 0;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    .change .bar-top {
+    
+        transform: translate(0, 9px) rotate(-45deg);
+    
+    }
+    
+    .change .bar-center {
+    
+        opacity: 0;
+
+    }
+    
+    .change .bar-bottom {
+    
+        transform: translate(0, -9px) rotate(45deg);
+    
+    }
+
+    /* sidebar */
+    .sidebar {
+    
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        transition: width 0.5s ease-in-out; 
+        padding-top: 10px;
+        color: #111;
+        top: 80px;
+    
+    }
+    
+   
+    .sidebar .closebtn {
+    
+        position: absolute;
+        top: 0;
+        left: 25px;
+        font-size: 36px;
+
+    }
+
+    /* menubox */
+    .sidebar-item {
+        color: #111;
+        z-index: 10;
+    }
+    
+    .sidebar-link {
+    
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #111;
+        display: block;
+        transition: 0.5s;
+    
+    }
+
+    .sidebar-link:hover {
+        color: #000000;
+    }
+    
+    .sidebar .closebtn {
+    
+        position: absolute;
+        top: 0;
+        left: 25px;
+        font-size: 36px;
+        margin-right: 50px;
+    
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #ebebeb;
+        height: max-content;
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+        bottom: 0;
+    }
+    
+    .footer-ctn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-bottom: 1px solid #777777;
+        border-right: 0ch solid #777777;
+        width: fit-content;
+        width: 100%;
+        height: max-content;
+    }
+    .footer-title {
+        text-align: center;
+        color: #333;
+        font-size: 20px;
+        height: max-content;
+        width: 100%;
+    }
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        text-align: center;
+        padding-left: 10px;
+        height: max-content;
+    
+    }
+    .footer-item {
+        text-align: center;
+        margin: 0 10px;    
+    }
+    .footer-link {
+        color: #333;
+        font-size: 15px;
+    }
+    .tool-page {
+        background-color: #ffffff;
+    }
+    
+    .tool-section {
+        transition: ease-out 0.5s;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+    .tool-section:hover {
+        background-color: #f8f9fa;
+        box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tool-ctn {
+       
+        display: flex;
+        margin: 20px 0px;
+        padding: 10px 20px;
+        border-left: 2px solid #f8f9fa;  
+        height: 100px;
+        justify-content: flex-start;
+        align-items: center;
+    
+        transition: ease-out 0.5s;   
+    }
+    
+    .tool-section:hover .tool-ctn:hover {
+        border-left: 2px solid #777777;
+    }
+    
+    .tool-link {
+        width: min-content;
+    }
+    
+    .tool-link:hover .tool-title {
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    .tool-link:hover .tool-icon {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    
+    /* Tool title style */
+    .tool-title {
+        font-size: 20px;
+        width: 150px;
+        color: #333;
+        margin-left: 20px;
+
+    }
+
+    /* Tool icon style */
+    .tool-icon {
+        width: 35px;
+        height: auto;
+    }
+    
+    .index-section#review {
+        display: none;
+    }
+}

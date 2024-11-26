@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Datentypen von J",
+      "body": "JavaScript ist dynamisch typisiert. Das bedeutet, dass die Zuweisung von Werten an Variablen keinen typbasierten Einschränkungen unterliegt.",
+      "likes": 6,
+      "liked": false
+    },
+    {
+      "id": 2,
+      "title": "Datentyp einer Variable",
+      "body": "Der Datentyp eines Wertes lässt sich mit dem Operator<code> 'typeof'</code> ermitteln",
+      "likes": 33,
+      "liked": false
+    },
+    {
+      "id": 3,
+      "title": "Variablen$$",
+      "body": "“let“ deklariert eine Variable. “const“ deklariert eine Konstante. “var“ deklariert globale Variablen und sollte nicht mehr verwendet werden. Variable ohne Zuweisung sind ‘’undefined’’.",
+      "likes": 23
+    },
+    {
+      "id": 4,
+      "title": "Dekonstruktions",
+      "body": "Die Dekonstruktion ermöglicht es, Daten aus Arrays oder Objekten zu extrahieren.",
+      "likes": 0,
+      "liked": false
+    },
+    {
+      "id": 5,
+      "title": "Test - edited",
+      "body": "Dies ist ein Test des Blogs. - edited",
+      "likes": 3
+    }
+  ]
+}

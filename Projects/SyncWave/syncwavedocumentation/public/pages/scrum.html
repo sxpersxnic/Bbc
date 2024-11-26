@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/desktop.css">
+        <link rel="stylesheet" type="text/css" href="../css/scrum.css">
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+        <script src="../js/script.js" defer></script>
+        <script src="../js/scrum.js" defer></script>
+        <script src="../js/mobile-menu.js" defer></script>
+        <title>SyncWaveScrum Documentation</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+
+            <!-- Mobile Navigation -->
+            <nav class="navbar-mobile mobile-only">
+               <div class="accordion" onclick="toggleSidebar()">
+                   <div class="bar-top"></div>
+                   <div class="bar-center"></div>
+                   <div class="bar-bottom"></div>
+               </div>
+            </nav>
+
+            
+            <a href="../index.html" class="project">
+                <img src="../images/Logo.svg" alt="SyncWave Logo" class="logo"/>
+                <h1 class="title">SyncWave</h1>
+            </a>
+
+            <h1 class="page-title">Scrum: <span id="current-sprint"></span></h1>
+    
+            <nav class="navbar-desktop">               
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="frontend" class="dropdown-label">Frontend</label>
+                    <ul id="frontend" class="dropdown-content">
+                        <li><a href="./frontend.html">Technologies</a></li>
+                        <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Git Repository</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="backend" class="dropdown-label">Backend</label>
+                    <ul id="backend" class="dropdown-content">
+                        <li><a href="./backend.html">Technologies</a></li>
+                        <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Git Repository</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="userstories" class="dropdown-label">User stories</label>
+                    <ul id="backend" class="dropdown-content">
+                        <li><a href="./userstories.html">Stories</a></li>
+                    </ul>
+                </button>
+            </nav>
+        </header>
+        <main>
+            
+            <!-- Mobile sidebar -->
+            <div class="sidebar mobile-only" id="sidebar">
+               <div class="sidebar-item"><a class="sidebar-link" href="./frontend.html" onclick="toggleSidebar()">Frontend</a></div>
+               <div class="sidebar-item"><a class="sidebar-link" href="./backend.html" onclick="toggleSidebar()">Backend</a></div>
+               <div class="sidebar-item"><a class="sidebar-link" href="./userstories.html" onclick="toggleSidebar()">User stories</a></div>
+               <div class="sidebar-item"><a class="sidebar-link" href="../index.html" onclick="toggleSidebar()">Home</a></div>
+            </div>
+
+            <section class="scrum-section" id="sprint1">
+                <h1 class="sprint-title">1st Sprint</h1>
+                <article class="sprint-article">
+                    <h2 class="topic-title">Sprint Description</h2>
+                    <p class="sprint-txt">
+                        With the first sprint, the project begun. We met in our groups and discussed what our project should be about and what we would like to achieve. We decided to build a Teams like clone, so a team management platform.
+                    </p>
+                </article>
+                <article class="sprint-article">
+                    <h2 class="topic-title">Goals</h2>
+                    <p class="sprint-txt">To take the very first step of our application, we had to set up the Git repositories and the development enviornments. When this was done, we started with our first feature: <strong>Authentication</strong>. This meant for the backend team, to implement the logic of Signup and Signin. When a Sign up request gets received, the application should validate the credentials provided and if the user is not already existing in the database. Then the user should be created and added. When a Sign in request gets received, the application checks, if the user exists and if the login credentials are valid. If so then a JWT token needs to be generated. In the frontend, we had to implement the pages for Login and Reg</p>
+                </article>
+                <article class="sprint-article">
+                    <h2 class="topic-title">Reached</h2>
+                    <p class="sprint-txt"></p>
+                </article>
+            </section>
+            <section class="scrum-section" id="sprint2">
+                <h1 class="sprint-title">2nd Sprint</h1>
+                <article class="sprint-article">
+                    <h2>Sprint Description</h2>
+                </article>
+                <article class="sprint-article">
+                    <h2>Goals</h2>
+                </article>
+                <article class="sprint-article">
+                    <h2>Reached</h2>
+                </article>
+            </section>
+            <section class="scrum-section" id="sprint3">
+                <h1 class="sprint-title">3rd Sprint</h1>
+                <article class="sprint-article">
+                    <h2>Sprint Description</h2>
+                </article>
+                <article class="sprint-article">
+                    <h2>Goals</h2>
+                </article>
+                <article class="sprint-article">
+                    <h2>Reached</h2>
+                </article>
+            </section>
+            <section class="scrum-section" id="sprint4">
+                <h1 class="sprint-title">4th Sprint</h1>
+                <article class="sprint-article">
+                    <h2>Sprint Description</h2>
+                </article>
+                <article class="sprint-article">
+                    <h2>Goals</h2>
+                </article>
+                <article class="sprint-article">
+                    <h2>Reached</h2>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <article class="footer-ctn">
+                <strong class="footer-title">Git repositories</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavefrontend">Frontend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Backend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavedocumentation">Documentation repository</a></li>
+                </ul>
+            </article>
+            <article class="footer-ctn">
+                <strong class="footer-title">Contributors</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/sxpersxnic">Melvin Kampus</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/LoLo-work">Loris Vincenzo Polesana</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Nik Brönnimann</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Sebastian Meier</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Lou Wüthrich</a></li>
+                </ul>
+            </article>
+        </footer>
+    </body>
+</html>

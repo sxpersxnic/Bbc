@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/desktop.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="./js/script.js" defer></script>
+    <script src="./js/mobile-menu.js" defer></script>
+    <title>SyncWave Project Documentation</title>
+</head>
+<body>
+    <header class="header" id="header">
+        
+        <!-- Mobile Navigation -->
+         <nav class="navbar-mobile mobile-only">
+            <div class="accordion" onclick="toggleSidebar()">
+                <div class="bar-top"></div>
+                <div class="bar-center"></div>
+                <div class="bar-bottom"></div>
+            </div>
+         </nav>
+
+        <a href="./index.html" class="project">
+            <img src="./images/Logo.svg" alt="SyncWave Logo" class="logo"/>
+            <h1 class="title">SyncWave</h1>
+        </a>
+
+        <h1 class="page">Project Overview</h1>
+
+        <!-- Desktop Navigation -->
+        <nav class="navbar-desktop">
+
+            <button class="dropdown-ctn" onclick="dropDown()">
+                <label for="frontend" class="dropdown-label">Frontend</label>
+                <ul id="frontend" class="dropdown-content">
+                    <li><a href="./pages/frontend.html">Technologies</a></li>
+                    <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavefrontend">Git Repository</a></li>
+                </ul>
+            </button>
+            
+            <button class="dropdown-ctn" onclick="dropDown()">
+                <label for="backend" class="dropdown-label">Backend</label>
+                <ul id="backend" class="dropdown-content">
+                    <li><a href="./pages/backend.html">Technologies</a></li>
+                    <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Git Repository</a></li>
+                </ul>
+            </button>
+
+            <button class="dropdown-ctn" onclick="dropDown()">
+                <label for="userstories" class="dropdown-label">User stories</label>
+                <ul id="backend" class="dropdown-content">
+                    <li><a href="./pages/userstories.html">All Stories</a></li>
+                    <li><a href="./pages/userstories.html#authentication">Authentication</a></li>
+                    <li><a href="./pages/userstories.html#messaging">Messaging</a></li>
+                    <li><a href="./pages/userstories.html#groups">Groups</a></li>
+                    <li><a href="./pages/userstories.html#usage-and-management">Usage and management</a></li>
+                    <li><a href="./pages/userstories.html#assignments">Assignments</a></li>
+                </ul>
+            </button>
+
+            <button class="dropdown-ctn" onclick="dropDown()">
+                <label for="scrum" class="dropdown-label">Scrum</label>
+                <ul id="scrum" class="dropdown-content">
+                    <li><a href="./pages/scrum.html#sprint1">1st Sprint</a></li>
+                    <li><a href="./pages/scrum.html#sprint2">2nd Sprint</a></li>
+                    <li><a href="./pages/scrum.html#sprint3">3rd Sprint</a></li>
+                    <li><a href="./pages/scrum.html#sprint4">4th Sprint</a></li>
+                </ul>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Mobile sidebar -->
+         <div class="sidebar mobile-only" id="sidebar">
+            <div class="sidebar-item"><a class="sidebar-link" href="./pages/frontend.html" onclick="toggleSidebar()">Frontend</a></div>
+            <div class="sidebar-item"><a class="sidebar-link" href="./pages/backend.html" onclick="toggleSidebar()">Backend</a></div>
+            <div class="sidebar-item"><a class="sidebar-link" href="./pages/userstories.html" onclick="toggleSidebar()">User stories</a></div>
+            <div class="sidebar-item"><a class="sidebar-link" href="./pages/scrum.html" onclick="toggleSidebar()">Scrum</a></div>
+        </div>
+
+        <section class="index-section" id="abstract">
+            <h3 class="index-topic">Abstract</h3>
+            <ul class="index-txt-ctn">
+                <li class="index-txt-item" id="abstract">
+                    <p class="index-txt">
+                        SyncWave is a comprehensive team organization platform designed to streamline collaboration and task management within teams. 
+                        Inspired by modern team collaboration tools, SyncWave provides a robust set of features tailored for efficient teamwork.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="index-section" id="features">
+            <h3 class="index-topic">Features</h3>
+            <ul class="index-txt-ctn">
+                <li class="index-txt-item"><p class="index-txt-starter">Authentication with JWT:</p><p class="index-txt">Secure authentication mechanism using JSON Web Tokens (JWT) ensures data integrity and user identity management.</p></li>
+                <li class="index-txt-item"><p class="index-txt-starter">Messaging with Websockets:</p><p class="index-txt">Real-time messaging capabilities powered by Websockets enable instant communication and updates across teams.</p></li>
+                <li class="index-txt-item"><p class="index-txt-starter">Creation and Managing of Teams:</p><p class="index-txt">Easy creation, organization, and management of teams to facilitate structured collaboration.</p></li>
+                <li class="index-txt-item"><p class="index-txt-starter">Assigning of Tasks:</p><p class="index-txt">Effortlessly assign tasks to team members, track progress, and manage deadlines effectively.</p></li>
+            </ul>
+        </section>
+        <section class="index-section" id="review">
+            <h3 class="index-topic">Development review</h3>
+            <ul class="review-list-ctn">
+                <li class="review-list-sub-ctn" id="pro">
+                    <h4 class="pro-title">Pros</h4>
+                    <ul class="review-txt-ctn" id="pro">
+                        <li class="review-list-item" id="pro"><p class="index-txt" id="pro">Speed</p></li>
+                    </ul>
+                </li>
+                <li class="review-list-sub-ctn" id="contra">
+                    <h4 class="contra-title">Contras</h4>
+                    <ul class="review-txt-ctn" id="contra">
+                        <li class="review-list-item" id="contra"><p class="index-txt" id="contra">Communication</p></li>
+                        <li class="review-list-item" id="contra"><p class="index-txt" id="contra">Priorities</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="index-section" id="conclusion">
+            <h3 class="index-topic">Conclusion</h3>
+            <ul class="index-txt-ctn">
+                <li class="index-txt-item" id="conclusion">
+                    <p class="index-txt">It was definitely an advanture, we learned a lot of new skills and capabilities.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <article class="footer-ctn">
+            <strong class="footer-title">Git repositories</strong>
+            <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavefrontend">Frontend repository</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Backend repository</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavedocumentation">Documentation repository</a></li>
+            </ul>
+        </article>
+        <article class="footer-ctn">
+            <strong class="footer-title">Contributors</strong>
+            <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link" href="https://github.com/sxpersxnic">Melvin Kampus</a></li>
+                <li class="footer-item"><a class="footer-link" href="https://github.com/LoLo-work">Loris Vincenzo Polesana</a></li>
+                <li class="footer-item"><a class="footer-link" href="">Nik Brönnimann</a></li>
+                <li class="footer-item"><a class="footer-link" href="">Sebastian Meier</a></li>
+                <li class="footer-item"><a class="footer-link" href="">Lou Wüthrich</a></li>
+            </ul>
+        </article>
+    </footer>
+</body>
+</html>

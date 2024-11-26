@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant Benutzer1
+    participant System
+    participant Benutzer2
+    Benutzer1->>System: Ticketkauf Anfrage
+    activate System
+    System->>System: Update (Zahlung dauert lange)
+    Benutzer2->>System: Ticketkauf Anfrage
+    System-->>Benutzer2: Abgelehnt (Ticket bereits in Bearbeitung)
+    deactivate System
+    System-->>Benutzer1: Bestätigt

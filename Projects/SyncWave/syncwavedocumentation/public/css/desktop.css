@@ -1,0 +1,295 @@
+/* Font: Chakra Petch*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Set to default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;   
+}
+
+/* Set font, background color, foreground color, margin */
+html, body {
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; 
+    color: #333; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px; 
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+
+    height: 80px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.navbar-desktop {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+/* Dropdown */
+.dropdown-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    transition: ease-out 0.5s;
+  
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+
+}
+
+.dropdown-ctn:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-ctn:focus {
+    border-bottom: 3px solid #acacac;
+}
+
+.dropdown-label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    width: 100%;
+    top: 90px;
+    list-style-type: none;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    height: 50px;
+}
+
+.dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-content li:hover {
+    background-color: #b9b9b9;
+}
+
+main {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+ul li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin: 0 10px;
+}
+
+.page-title {
+    margin-right: 10px;
+    font-size: 2vw;
+}
+
+.tool-page {
+    background-color: #ffffff;
+}
+
+.tool-section {
+    transition: ease-out 0.5s;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tool-section:hover {
+    background-color: #f8f9fa;
+    box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.tool-ctn {
+   
+    display: flex;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    border-left: 2px solid #f8f9fa;  
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: ease-out 0.5s;   
+}
+
+.tool-section:hover .tool-ctn:hover {
+    border-left: 2px solid #777777;
+}
+
+.tool-link {
+    text-decoration: none;
+    width: min-content;
+}
+
+.tool-link:hover .tool-title {
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.tool-link:hover .tool-icon {
+    width: 80px;
+    margin-left: 10px;
+}
+
+/* Tool title style */
+.tool-title {
+    font-size: 50px;
+    width: 150px;
+    color: #333;
+    margin-left: 20px;
+
+}
+
+/* Tool icon style */
+.tool-icon {
+    width: 75px;
+    height: auto;
+}
+
+.current-icon {
+    width: 50px;
+    height: auto;
+}
+
+.current-title {
+    margin-right: 10px;
+}
+
+.tech-image {
+    width: 80%;
+    height: auto;
+}
+
+/* Hide mobile view attributes in desktop view */
+.mobile-only {
+
+    display: none;
+
+}  
+
+.footer {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-ctn {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border-right: 1px solid #777777;
+    width: fit-content;
+    padding: 0px 80px;
+}
+.footer-title {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer-list {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    width: 100%;
+    text-align: center;
+
+}
+.footer-item {
+    text-align: center;
+    margin: 0 10px;    
+}
+.footer-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+}

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../../../fonts/Montserrat-Light.ttf)
+}
+
+.profile {
+    display: block;
+    justify-content: center;
+   
+    
+    font-family: Montserrat;
+}
+.title {
+    font-family: Montserrat;
+    font-size: 4vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    color: #040404;
+    opacity: 60%;
+    text-align: center;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: smaller;
+    font-weight: 400;
+    margin-bottom: 4vw;
+    width: 100vw;
+
+    padding-bottom: 5vw;
+    box-shadow: 0px 2px 2px 1px #b3b3b3;
+}
+
+.subTitleTxt {
+    margin-right: 1vw;
+}
+
+.user2,
+.user1 {
+    display: inline-flex;
+   
+    margin-bottom: 2vw;
+    float: left;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 2vw;
+}
+
+.user1 {
+    font-size: small;
+    font-weight: bold;
+}
+.user2 {
+    font-size: smaller;
+}
+.btnBar {
+    position: relative;
+    width: 25vw;
+    height: 2vw;
+    margin-left: 25vw;
+    margin-bottom: 5vw;
+
+}
+.deleteAcc {
+    color: red;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    padding: 1vw;
+    width: 50%;
+    background: #fff;
+    transition: border-radius 0.1s;
+    margin-bottom: 5vw;
+
+}
+.logOut {
+    color: red;
+    border-radius: 5px 0  0 5px;
+    border: none;
+    padding: 1vw;
+    width: 50%;
+    background: #fff;
+    transition: border-radius 0.1s;
+    margin-bottom: 5vw;
+}
+.deleteAcc:hover {
+    opacity: 60%;
+}
+.logOut:hover {
+    opacity: 60%;
+
+}
+.creationDate {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: hidden; 
+    max-width: 8.6ch;
+}
+
+.label {
+    margin-right: 1vw;
+}

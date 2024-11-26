@@ -1,0 +1,12 @@
+.button {
+    border-color: #4a60df;
+}
+
+.button:hover { 
+    border-color: #df4a4a;
+}
+
+.container {
+    margin: 2vh;
+    text-align: center;
+}

@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "email": "lolo@lolo.ch",
+      "password": "$2a$10$818XFxrhtaiChpT1iHu94O0zFKK9udrHkIYphpK4X1DNNvQAvFub6",
+      "username": "Loris",
+      "id": 1
+    },
+    {
+      "email": "seba@seba.ch",
+      "password": "$2a$10$A.AAK8ZE9lJ11i.tsU8prOfGj5tfEpOYwKEfKfNoIKq.1W8J8NY4C",
+      "username": "Sebastian",
+      "id": 2
+    },
+    {
+      "email": "nik@nik.ch",
+      "password": "$2a$10$A.AAK8ZE9lJ11i.tsU8prOfGj5tfEpOYwKEfKfNoIKq.1W8J8NY4C",
+      "username": "Nik",
+      "id": 3
+    },
+    {
+      "email": "seba@seba.ch",
+      "password": "$2a$10$A.AAK8ZE9lJ11i.tsU8prOfGj5tfEpOYwKEfKfNoIKq.1W8J8NY4C",
+      "username": "Sebastian",
+      "id": 6
+    },
+    {
+      "email": "test@test.ch",
+      "password": "$2a$10$A.AAK8ZE9lJ11i.tsU8prOfGj5tfEpOYwKEfKfNoIKq.1W8J8NY4C",
+      "username": "test_user",
+      "id": 4
+    }
+  ],
+  "chats": [
+    {
+      "id": 0,
+      "name": "Chat1",
+      "img": "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
+      "userIds": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "authorId": 1,
+      "chatId": 0,
+      "time": "10.06.2024 11:56"
+    },
+    {
+      "id": 2,
+      "content": "Test message",
+      "authorId": 2,
+      "chatId": 0,
+      "time": "10.06.2024 12:23"
+    },
+    {
+      "id": 3,
+      "content": "Test message",
+      "authorId": 3,
+      "chatId": 0,
+      "time": "10.06.2024 14:09"
+    },
+    {
+      "content": "fsdafasdfsd",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "11.6.2024 15:20",
+      "id": 4
+    },
+    {
+      "content": "fsdfsdfsdfsdfsd",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "12.6.2024 8:08",
+      "id": 5
+    },
+    {
+      "content": "fsdfsdfds",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "12.6.2024 8:08",
+      "id": 6
+    },
+    {
+      "content": "fdsfdsdfs",
+      "authorId": 3,
+      "chatId": "2",
+      "time": "17.6.2024 11:45",
+      "id": 7
+    },
+    {
+      "content": "fsdfsd",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 8
+    },
+    {
+      "content": "fsd",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 9
+    },
+    {
+      "content": "sd",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 10
+    },
+    {
+      "content": "sd",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 11
+    },
+    {
+      "content": "f",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 12
+    },
+    {
+      "content": "f",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 13
+    },
+    {
+      "content": "ds",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 14
+    },
+    {
+      "content": "f",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 15
+    },
+    {
+      "content": "f",
+      "authorId": 3,
+      "chatId": "0",
+      "time": "17.6.2024 13:20",
+      "id": 16
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+.button {
+    
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.default {
+    color: #ffffff;
+    background-color: black;
+}
+.create {
+    color: #ffffff;
+    background-color: #5ba14a;
+}
+.delete {
+    color: #ffffff;
+    background-color: #ff0000;
+}

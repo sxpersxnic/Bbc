@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/** {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  -ms-overflow-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* a:visited {
+} */
+
+/* a:hover {
+  text-decoration: underline;
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background: var(--surface-section);
+  border: 2px solid var(--surface-border);
+  border-radius: 12px;
+}

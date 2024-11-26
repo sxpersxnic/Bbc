@@ -1,0 +1,54 @@
+.title {
+    font-size: 5vh;
+    text-align: center;
+    color: #005200d5;
+}
+
+.error {
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+.text {
+    text-align: center;
+    color: #009100c5;
+}
+
+.addButton {
+    color: #005200d5;
+    border-color: white;
+    background-color: white;
+}
+
+.addButton:hover {
+    color: white;
+    background-color: #009100c5;
+    border-color: #009100fb;
+}
+
+.removeButton {
+    border: none;
+    border-radius: 100%;
+    margin-left: 1vh;
+    background-color: white;
+    color: red;
+    
+}
+
+.removeButton:hover {
+    background-color: #ff0000c0;
+    color: white;
+    
+}
+
+.clearListButton {
+    color: #b30101d5;
+    border-color: white;
+    background-color: white;
+}
+
+.clearListButton:hover {
+    color: white;
+    background-color: #ff0000c0;
+    border-color: #ff0000ef;
+}

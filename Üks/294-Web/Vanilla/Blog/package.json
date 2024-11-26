@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Development Setup mit live-server und json-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others \"npm run backend\" \"npm run frontend\"",
+    "frontend": "live-server --port=8000 --proxy=/posts:http://localhost:8001/posts --ignore=**/*.json,**/*.md",
+    "backend": "json-server --watch db.json --port 8001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.bbcag.ch/inf/wd-21/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "json-server": "^0.17.1",
+    "live-server": "^1.2.2",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/desktop.css">
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+        <script src="../js/script.js" defer></script>
+        <script src="../js/technologies.js" defer></script>
+        <script src="../js/mobile-menu.js" defer></script>
+        <title>SyncWave Backend Documentation</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+
+            <!-- Mobile Navigation -->
+            <nav class="navbar-mobile mobile-only">
+                <div class="accordion" onclick="toggleSidebar()">
+                    <div class="bar-top"></div>
+                    <div class="bar-center"></div>
+                    <div class="bar-bottom"></div>
+                </div>
+            </nav>
+            
+            <!-- Logo -->
+            <a href="../index.html" class="project" aria-label="Index" title="Go to Project overview">
+                <img src="../images/Logo.svg" alt="SyncWave Logo" class="logo"/>
+                <h1 class="title">SyncWave</h1>
+            </a>
+
+            <!-- Page and location title -->
+            <h1 class="page" id="current-technologie">
+                    <p class="page-title">Backend:</p>
+                    <span id="current-title" class="current-title"></span>
+                    <img id="current-icon" src="" alt="" class="current-icon">
+
+            </h1>
+    
+            <!-- Desktop navigation -->
+            <nav class="navbar-desktop">               
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="frontend" class="dropdown-label">Frontend</label>
+                    <ul id="frontend" class="dropdown-content">
+                        <li><a href="./frontend.html" aria-label="Frontend" title="Go to Frontend technologies">Technologies</a></li>
+                        <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend"  aria-label="Frontend" title="Go to Git repository">Git Repository</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="userstories" class="dropdown-label">User stories</label>
+                    <ul id="userstories" class="dropdown-content">
+                        <li><a href="./userstories.html">Stories</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="scrum" class="dropdown-label">Scrum</label>
+                    <ul id="scrum" class="dropdown-content">
+                        <li><a href="./scrum.html#sprint1">1st Sprint</a></li>
+                        <li><a href="./scrum.html#sprint2">2nd Sprint</a></li>
+                        <li><a href="./scrum.html#sprint3">3rd Sprint</a></li>
+                        <li><a href="./scrum.html#sprint4">4th Sprint</a></li>
+                    </ul>
+                </button>
+            </nav>
+        </header>
+        <main class="tool-page">
+
+            <!-- Mobile sidebar -->
+            <div class="sidebar mobile-only" id="sidebar">
+                <div class="sidebar-item"><a class="sidebar-link" href="./frontend.html" onclick="toggleSidebar()">Frontend</a></div>
+                <div class="sidebar-item"><a class="sidebar-link" href="./userstories.html" onclick="toggleSidebar()">User stories</a></div>
+                <div class="sidebar-item"><a class="sidebar-link" href="./scrum.html" onclick="toggleSidebar()">Scrum</a></div>
+                <div class="sidebar-item"><a class="sidebar-link" href="../index.html" onclick="toggleSidebar()">Home</a></div>
+            </div>
+
+            <section id="section1" class="tool-section">
+                <h2 class="tool-title">Description</h2>
+                <p>This part of the project documentation focuses on the tools and technologies used in backend of the SyncWave project. We will explain, how the application works, what was challenging, etc.</p>
+            </section>
+
+            <section id="section2" class="tool-section">
+                <div class="tool-ctn">
+                    <a class="tool-link" href="https://spring.io/">
+                        <img src="../images/icons/Spring.svg" alt="Spring Logo" class="tool-icon">
+                    </a>
+                    <h3 class="tool-title">Spring</h3>
+                </div>
+
+                <p>The <strong>Java Spring Framework</strong> is a powerful tool used to build web applications and APIs. It provides a comprehensive programming and configuration model for modern Java-based enterprise applications, helping developers create robust and scalable applications quickly and efficiently.</p>
+            </section>
+
+            <section id="section3" class="tool-section">
+                <div class="tool-ctn">
+                    <a class="tool-link" href="https://www.mysql.com/">
+                        <img src="../images/icons/MySQL.svg" alt="MySQL Logo" class="tool-icon">
+                    </a>
+                    <h3 class="tool-title">MySQL</h3>
+                </div>
+                
+                <p><strong>MySQL</strong> is a popular relational database management system that uses Structured Query Language (SQL) to manage and organize data. It is widely used for its reliability, ease of use, and capability to handle large amounts of data, making it perfect for both small and large-scale applications.</p>                
+                <img src="../images/code/diagrams/db_eerd.png" alt="EERD of MySQL Database" class="tech-image">
+            </section>
+
+            <section id="section4" class="tool-section">
+
+                <div class="tool-ctn">
+                    <a class="tool-link" href="https://websockets.spec.whatwg.org/">
+                        <img src="../images/icons/Websocket.svg" alt="WebSockets Logo" class="tool-icon">
+                    </a>
+                    <h3 class="tool-title">WebSockets</h3>
+                </div>
+                
+                <p><strong>WebSockets</strong> is a technology that enables interactive communication between a user's web browser and a server. Unlike traditional methods where the server must wait for the client to request data, WebSockets allow real-time, two-way data exchange, which is ideal for applications like live chats, gaming, and real-time notifications.</p>
+                <img src="../images/code/diagrams/WebSockets-Diagram.png" alt="Diagram of Websocket connection" class="tech-image">
+            </section>
+
+            <section id="section5" class="tool-section">
+
+                <div class="tool-ctn">
+                    <a class="tool-link" href="https://www.docker.com/">
+                        <img src="../images/icons/Docker.svg" alt="Docker Logo" class="tool-icon">
+                    </a>
+                    <h3 class="tool-title">Docker</h3>
+                </div>
+
+                <p><strong>Docker</strong> is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow developers to package an application with all its dependencies into a standardized unit, ensuring it runs smoothly in any environment, whether on a developer's local machine, in a data center, or in the cloud.</p>            
+            </section>
+        </main>
+        <footer class="footer">
+            <article class="footer-ctn">
+                <strong class="footer-title">Git repositories</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavefrontend">Frontend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Backend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavedocumentation">Documentation repository</a></li>
+                </ul>
+            </article>
+            <article class="footer-ctn">
+                <strong class="footer-title">Contributors</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/sxpersxnic">Melvin Kampus</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/LoLo-work">Loris Vincenzo Polesana</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Nik Brönnimann</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Sebastian Meier</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Lou Wüthrich</a></li>
+                </ul>
+            </article>
+        </footer>
+    </body>
+</html>

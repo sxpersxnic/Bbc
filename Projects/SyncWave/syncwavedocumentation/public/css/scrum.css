@@ -1,0 +1,66 @@
+/* Desktop */
+.scrum-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: max-content;
+    margin-bottom: 60px;
+    padding: 10px;
+    border-bottom: 1px solid #777777;
+}
+
+.scrum-section#sprint4 {
+    margin-bottom: 0;
+    border-bottom: 0px;
+}
+
+.sprint-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.sprint-article {}
+
+.scrum-ctn {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.sprint {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-left: 2px solid #f8f9fa;  
+    transition: ease-out 0.5s;   
+    padding: 0px 10px;
+}
+
+.sprint:hover {
+    border-left: 2px solid #777777;
+}
+
+.sprint-starter {
+    font-size: 25px;
+    text-align: left;
+}
+.scrum-txt {
+    text-align: left;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .story-section {
+    
+    }
+    .story-topic {
+    
+    }
+    
+    .story-ctn {
+    
+    }
+    
+    .story {}
+
+}

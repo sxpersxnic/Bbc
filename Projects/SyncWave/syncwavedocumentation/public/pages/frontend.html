@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/desktop.css">
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+        <script src="../js/script.js" defer></script>
+        <script src="../js/technologies.js" defer></script>
+        <script src="../js/mobile-menu.js" defer></script>
+        <title>SyncWave Frontend Documentation</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+
+            <!-- Mobile Navigation -->
+            <nav class="navbar-mobile mobile-only">
+                <div class="accordion" onclick="toggleSidebar()">
+                    <div class="bar-top"></div>
+                    <div class="bar-center"></div>
+                    <div class="bar-bottom"></div>
+                </div>
+            </nav>
+            
+            <!-- Logo -->
+            <a href="../index.html" class="project">
+                <img src="../images/Logo.svg" alt="SyncWave Logo" class="logo"/>
+                <h1 class="title">SyncWave</h1>
+            </a>
+
+            <!-- Page and location title -->
+            <h1 class="page" id="current-technologie">
+                    <p class="page-title">Frontend:</p>
+                    <span id="current-title" class="current-title"></span>
+                    <img id="current-icon" src="" alt="" class="current-icon">
+
+            </h1>
+    
+            <!-- Desktop navigation -->
+            <nav class="navbar-desktop">               
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="backend" class="dropdown-label">Backend</label>
+                    <ul id="backend" class="dropdown-content">
+                        <li><a href="./backend.html">Technologies</a></li>
+                        <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Git Repository</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="userstories" class="dropdown-label">User stories</label>
+                    <ul id="backend" class="dropdown-content">
+                        <li><a href="./userstories.html">Stories</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="scrum" class="dropdown-label">Scrum</label>
+                    <ul id="scrum" class="dropdown-content">
+                        <li><a href="./scrum.html#sprint1">Sprint1</a></li>
+                        <li><a href="./scrum.html#sprint2">Sprint2</a></li>
+                        <li><a href="./scrum.html#sprint3">Sprint3</a></li>
+                        <li><a href="./scrum.html#sprint4">Sprint4</a></li>
+                    </ul>
+                </button>
+            </nav>
+        </header>
+
+        <main class="tool-page">
+
+            <!-- Mobile sidebar -->
+            <div class="sidebar mobile-only" id="sidebar">
+                <div class="sidebar-item"><a class="sidebar-link" href="./backend.html" onclick="toggleSidebar()">Backend</a></div>
+                <div class="sidebar-item"><a class="sidebar-link" href="./userstories.html" onclick="toggleSidebar()">User stories</a></div>
+                <div class="sidebar-item"><a class="sidebar-link" href="./scrum.html" onclick="toggleSidebar()">Scrum</a></div>
+                <div class="sidebar-item"><a class="sidebar-link" href="../index.html" onclick="toggleSidebar()">Home</a></div>
+            </div>
+
+            <section id="section1" class="tool-section">
+                <h2 class="tool-title">Description</h2>
+                <p>This part of the project documentation focuses on the tools and technologies used in frontend of the SyncWave project. We will explain, how the application works, what was challenging, etc.</p>
+            </section>
+
+            <section 
+                id="section2"
+                class="tool-section"
+            >
+                <div class="tool-ctn">
+                    <a class="tool-link" href="https://nextjs.org/">
+                        <img src="../images/icons/Nextjs.svg" alt="Next.js Logo" class="tool-icon">
+                    </a>
+                    <h3 class="tool-title">Nextjs</h3>
+                </div>
+
+                <p><strong>Next.js</strong> is a popular React framework used for building fast and scalable web applications. It provides features like server-side rendering and static site generation, which improve performance and SEO. Next.js makes it easier to create dynamic, modern websites and applications with minimal configuration.</p>
+            </section>
+
+            <section 
+                id="section3"
+                class="tool-section"
+            >
+                <div 
+                    class="tool-ctn"
+                >
+                    <a 
+                        class="tool-link" 
+                        href="https://www.typescriptlang.org/"
+                    >
+                        <img 
+                            src="../images/icons/TypeScript.svg"
+                            alt="TypeScript Logo"
+                            class="tool-icon"
+                        >
+                    </a>
+                    <h3 class="tool-title">TypeScript</h3>
+                </div>
+                <p><strong>TypeScript</strong> is a programming language developed by Microsoft that builds on JavaScript by adding static types. This means you can catch errors during development instead of runtime, making your code more robust and easier to maintain. TypeScript helps developers write cleaner and more predictable code, enhancing productivity and collaboration.</p>
+            </section>
+    
+            <section
+                 id="section4"
+                 class="tool-section"
+            >
+                <div class="tool-ctn">
+                    <a class="tool-link" href="https://www.primefaces.org/primereact/">
+                        <img src="../images/icons/PrimeReact.svg" alt="PrimeReact Logo" class="tool-icon">
+                    </a>
+                    <h3 class="tool-title">PrimeReact</h3>
+                </div>
+                <p><strong>PrimeReact</strong> is a collection of rich UI components for React applications. It provides a wide range of customizable components like buttons, data tables, and form elements that help developers build visually appealing and interactive user interfaces quickly. PrimeReact is designed to be flexible and easy to use, making it a popular choice for building modern web applications.</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <article class="footer-ctn">
+                <strong class="footer-title">Git repositories</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavefrontend">Frontend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Backend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavedocumentation">Documentation repository</a></li>
+                </ul>
+            </article>
+            <article class="footer-ctn">
+                <strong class="footer-title">Contributors</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/sxpersxnic">Melvin Kampus</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/LoLo-work">Loris Vincenzo Polesana</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Nik Brönnimann</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Sebastian Meier</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Lou Wüthrich</a></li>
+                </ul>
+            </article>
+        </footer>
+    </body>
+</html>

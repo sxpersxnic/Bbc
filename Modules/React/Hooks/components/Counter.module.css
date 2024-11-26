@@ -1,0 +1,31 @@
+.increaseButton {
+
+    color: #000000;
+    background-color: #00ff00;
+    width: 5vh;
+    height: 5vh;
+    margin-left: 2vh;
+
+}
+
+.decreaseButton {
+
+    color: #000000;
+    background-color: #ff0000;
+    width: 5vh;
+    height: 5vh;
+    margin-right: 2vh;
+
+}
+
+.number {
+    font-size: 3vh;
+}
+
+.counterContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}

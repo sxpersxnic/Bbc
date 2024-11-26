@@ -1,0 +1,112 @@
+### SignIn as User
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "email": "user@localhost",
+  "password": "user_password"
+}
+
+> {%
+    client.global.set("auth_token", response.body.accessToken);
+%}
+
+
+### SignIn as Manager
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "email": "eventmanagement@localhost",
+  "password": "manager_password"
+}
+
+> {%
+    client.global.set("auth_token", response.body.accessToken);
+%}
+
+
+### SignIn as Admin
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "email": "admin@localhost",
+  "password": "admin_password"
+}
+
+> {%
+    client.global.set("auth_token", response.body.accessToken);
+%}
+
+
+### Get all persons
+GET http://localhost:8080/persons
+Authorization: Bearer {{auth_token}}
+
+
+### Get all roles
+GET http://localhost:8080/roles
+Authorization: Bearer {{auth_token}}
+
+
+### Get all events
+GET http://localhost:8080/events
+Authorization: Bearer {{auth_token}}
+
+### Get all tickets
+GET http://localhost:8080/tickets
+Authorization: Bearer {{auth_token}}
+
+### Create Ticket
+POST http://localhost:8080/tickets/new
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "id": 2,
+  "name": "TestTicket",
+  "eventId": 2,
+  "amount": 100
+}
+
+### Create Event
+POST http://localhost:8080/events/new
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "id": 1,
+  "name": "TestEvent",
+  "ownerId": 2,
+  "ticketIds": [
+    1
+  ],
+  "date": "2024-04-16"
+}
+
+### SignUp
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "email": "test@localhost",
+  "password": "test_password"
+}
+
+> {%
+    client.global.set("auth_token", response.body.accessToken);
+%}
+
+### SignIn
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test@localhost",
+  "password": "test_password"
+}
+
+> {%
+    client.global.set("auth_token", response.body.accessToken);
+%}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/desktop.css">
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="../css/userstories.css">
+        <script src="../js/script.js" defer></script>
+        <script src="../js/mobile-menu.js" defer></script>
+        <title>SyncWave User stories Documentation</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+
+            <!-- Mobile Navigation -->
+            <nav class="navbar-mobile mobile-only">
+                <div class="accordion" onclick="toggleSidebar()">
+                    <div class="bar-top"></div>
+                    <div class="bar-center"></div>
+                    <div class="bar-bottom"></div>
+                </div>
+            </nav>
+
+            <a href="../index.html" class="project" aria-label="Index" title="Go to Project overview">
+                <img src="../images/Logo.svg" alt="SyncWave Logo" class="logo"/>
+                <h1 class="title">SyncWave</h1>
+            </a>
+
+            <h1 class="page">User stories</h1>
+    
+            <!-- Desktop Navigation -->
+            <nav class="navbar-desktop">               
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="frontend" class="dropdown-label">Frontend</label>
+                    <ul id="frontend" class="dropdown-content">
+                        <li><a href="./frontend.html" aria-label="Frontend" title="Go to Frontend technologies">Technologies</a></li>
+                        <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend" aria-label="Frontend" title="Go to Git repository">Git Repository</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="backend" class="dropdown-label">Backend</label>
+                    <ul id="backend" class="dropdown-content">
+                        <li><a href="./backend.html" aria-label="Frontend" title="Go to Backend technologies">Technologies</a></li>
+                        <li><a href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend" aria-label="Backend" title="Go to Git repository">Git Repository</a></li>
+                    </ul>
+                </button>
+                <button class="dropdown-ctn" onclick="dropDown()">
+                    <label for="scrum" class="dropdown-label">Scrum</label>
+                    <ul id="scrum" class="dropdown-content">
+                        <li><a href="./scrum.html#sprint1" aria-label="Scrum" title="Go to Scrum overview">1st Sprint</a></li>
+                        <li><a href="./scrum.html#sprint2" aria-label="Scrum" title="Go to Scrum overview">2nd Sprint</a></li>
+                        <li><a href="./scrum.html#sprint3" aria-label="Scrum" title="Go to Scrum overview">3rd Sprint</a></li>
+                        <li><a href="./scrum.html#sprint4" aria-label="Scrum" title="Go to Scrum overview">4th Sprint</a></li>
+                    </ul>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <!-- Mobile sidebar -->
+            <div class="sidebar mobile-only" id="sidebar">
+               <div class="sidebar-item"><a class="sidebar-link" href="./frontend.html" onclick="toggleSidebar()" aria-label="Frontend" title="Go to Frontend overview">Frontend</a></div>
+               <div class="sidebar-item"><a class="sidebar-link" href="./backend.html" onclick="toggleSidebar()" aria-label="Backend" title="Go to Backend overview">Backend</a></div>
+               <div class="sidebar-item"><a class="sidebar-link" href="./scrum.html" onclick="toggleSidebar()" aria-label="Scrum" title="Go to Scrum overview">Scrum</a></div>
+               <div class="sidebar-item"><a class="sidebar-link" href="../index.html" onclick="toggleSidebar()" aria-label="Index" title="Go to Project overview">Project</a></div>
+            </div>
+
+            <section id="authentication" class="story-section">
+                <h2 class="story-topic">Authentication & Security</h2>
+                <ul class="story-ctn">
+                    <li class="story">
+                    <strong class="story-number">User Story 1:</strong><p class="story-txt">As a user, I want my password to be encrypted for stronger security.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 2:</strong><p class="story-txt">As a user, I want my personal data to be securely stored in a database.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 3:</strong><p class="story-txt">As a user, I want meaningful error messages for login or registration failures (e.g., empty login field, incorrect password, invalid email during login; existing email during registration; weak password length) to improve the user experience.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 4:</strong><p class="story-txt">As a user, I want a password confirmation field during registration.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 5:</strong><p class="story-txt">As a user, I want meaningful error messages for login or registration failures (e.g., empty login field, incorrect password, invalid email during login; existing email during registration; weak password length) to improve the user experience.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 6:</strong><p class="story-txt">As a user, I want a password confirmation field during registration.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 7:</strong><p class="story-txt">As a user, I want to register and provide a username to create a new account.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 8:</strong><p class="story-txt">As a user, I want to receive a message when the login is successful.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 9:</strong><p class="story-txt">As a user, I want to log in using my email OR username.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 10:</strong><p class="story-txt">As a user, I want to log in using my email.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 11:</strong><p class="story-txt">As a user, I want to receive a message when the login is successful.</p></li>
+                    <li class="story">
+                        <strong class="story-number">User Story 12:</strong><p class="story-txt">As a user, I want to log in to access the services.</p></li>
+                    <li class="story">
+                        <span class="optional">Optional</span>
+                        <strong class="story-number">User Story 13:</strong><p class="story-txt">As user I would like to reset my password if I have forgotten my password</p>
+                    </li>
+                    <li class="story">
+                            <span class="optional">Optional</span>
+                            <strong class="story-number">User Story 14:</strong>
+                        <p class="story-txt">
+                            On failed validation: Pay attention to domain endings when registering, special characters for password.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="messaging" class="story-section">
+                <h2 class="story-topic">Messaging</h2>
+                <ul class="story-ctn">
+                    <li class="story"><strong class="story-number">User Story 15:</strong><p class="story-txt">As a user, I want a list to see all my existing chats.</p></li>
+                    <li class="story"><strong class="story-number">User Story 16:</strong><p class="story-txt">As a user, I want to be able to create new chats with other users.</p></li>
+                    <li class="story"><strong class="story-number">User Story 17:</strong><p class="story-txt">As a user, I want to ensure that chats with other people are not read by third parties (End-to-End Encryption).</p></li>
+                    <li class="story"><strong class="story-number">User Story 18:</strong><p class="story-txt">As a user, I want to easily find a text field to compose messages.</p></li>
+                    <li class="story"><strong class="story-number">User Story 19:</strong><p class="story-txt">As a user, I want to send a pre-typed message using both the send button and the Enter key.</p></li>
+                    <li class="story"><strong class="story-number">User Story 20:</strong><p class="story-txt">As a user, I want messages to be delivered instantly, in real-time.</p></li>
+                    <li class="story"><strong class="story-number">User Story 21:</strong><p class="story-txt">As a user, I want to retain old messages in the chat.</p></li>
+                    <li class="story"><strong class="story-number">User Story 22:</strong><p class="story-txt">As a user, I want to be able to delete my messages.</p></li>
+                    <li class="story"><strong class="story-number">User Story 23:</strong><p class="story-txt">As a user, I want to see with whom I am chatting.</p></li>
+                    <li class="story"><strong class="story-number">User Story 24:</strong><p class="story-txt">As a user (Person A), I want to create a chat with Person B only once.</p></li>
+                    <li class="story"><strong class="story-number">User Story 25:</strong><p class="story-txt">As a user, I don't want the other person to delete my messages (different rules apply in groups).</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 26:</strong><p class="story-txt">As a user, I want to know if my message has been delivered and read.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 27:</strong><p class="story-txt">As a user, I want to edit messages that have already been sent.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 28:</strong><p class="story-txt">As a user, I don't want others to edit my messages.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 29:</strong><p class="story-txt">As a user, I want to see the names of message authors in group chats.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 30:</strong><p class="story-txt">As a user, I want to create group chats with multiple people.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 31:</strong><p class="story-txt">As a user, I want to be identified as the owner in the group chats I create.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 32:</strong><p class="story-txt">As a user, I want to manage the group chats where I am the owner.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 33:</strong><p class="story-txt">As a user, I want the ability to remove or block chats/contacts.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 34:</strong><p class="story-txt">As a user, I want to pin important chats.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 35:</strong><p class="story-txt">As a user, I want to add self-created tags to different chats.</p></li>
+                    <li class="story"><span class="optional">Optional</span><strong class="story-number">User Story 36:</strong><p class="story-txt">As a user, I want to receive notifications for new messages.</p></li>
+                </ul>
+            </section>
+            <section id="groups" class="story-section">
+                <h2 class="story-topic">Groups</h2>
+                <ul class="story-ctn">
+                    <li class="story">
+                        <strong class="story-number">User Story 37:</strong>
+                        <p class="story-txt">
+                            As a user I would like to be able to upload files to Chanels if I have the permissions.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 38:</strong>
+                        <p class="story-txt">
+                            As a moderator, I want to be able to moderate messages from all users to keep intolerant topics out of the chat.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 39:</strong>
+                        <p class="story-txt">
+                            As a moderator, I want to pin messages in different channels.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 40:</strong>
+                        <p class="story-txt">
+                            As a user, I want to react to messages to indicate whether I agree or disagree without creating a separate message.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 41:</strong>
+                        <p class="story-txt">
+                            As a moderator, I want to be able to change channel settings after creation, rather than creating a new channel if I’m unhappy with the initial settings.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 42:</strong>
+                        <p class="story-txt">
+                            As a user, I want to be able to open uploaded files in the app and then close them without being reset to the beginning of the directory.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 43:</strong>
+                        <p class="story-txt">
+                            As an owner, I would like to be able to create my own roles with different rights to give people different rights if they do not need/have all the rights an admin has but still need some functions that normal users do not have. </li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 44:</strong>
+                        <p class="story-txt">
+                            As an owner, I would like to be able to create, edit and delete tasks in order to create, edit and delete tasks.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 45:</strong>
+                        <p class="story-txt">
+                            As a user I would like to see my tasks sorted by submission date> to see which task has higher priority.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 46:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to submit my tasks in order to submit my work to the task owner.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 47:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be notified when an admin returns my task so that I don't always have to check myself when my work is returned.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 48:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to attach files to my tasks so that I can submit all my work.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 49:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to remove attached files if I accidentally attach the wrong file, so as not to submit unnecessary or confusing items.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 50:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to return returned assignments in an improved form so that I can give my improved work to the assignment provider.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 51:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to undo the submission shortly after submission to prevent me from accidentally submitting too early.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 52:</strong>
+                        <p class="story-txt">
+                            As user I would like to be able to create groups</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 53:</strong>
+                        <p class="story-txt">
+                            As owner, i would like to assign roles in a group i have created in order to give different people different rights.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 54:</strong>
+                        <p class="story-txt">
+                            As an owner, I would like to be notified when a USER returns a task to me, so that I can correct it as quickly as possible.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 55:</strong>
+                        <p class="story-txt">
+                            As an owner, I would like to be able to undo my return shortly after submission> to prevent me from accidentally submitting my return too early.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 56:</strong>
+                        <p class="story-txt">
+                            As an owner, I would like to return submitted tasks to distribute points or suggest improvements</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 57:</strong>
+                        <p class="story-txt">
+                            As a moderator, I want to create various channels with names (optional) and a brief description, and make them accessible to different users.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 58:</strong>
+                        <p class="story-txt">
+                            As a moderator, I want to independently set permissions for users to write in created channels and view them, especially for informative channels.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 59:</strong>
+                        <p class="story-txt">
+                            As a moderator, I’d like an automatic content filter that screens messages containing specific words, making my job easier.</li>                                
+                        </p>
+                    <li class="story">
+                        <span class="optional">Optional</span>
+                        <strong class="story-number">User Story 60:</strong>
+                        <p class="story-txt">
+                            As a moderator, I would like to define who can upload files.</li>
+                        </p>
+                    <li class="story">
+                        <span class="optional">Optional</span>
+                        <strong class="story-number">User Story 61:</strong>
+                        <p class="story-txt">
+                            As a moderator, I want to create different types of channels with various functions.</li>
+                        </p>
+                </ul>
+            </section>
+            <section id="usage-and-management" class="story-section">
+                <h2 class="story-topic">Usage and management</h2>
+                <ul class="story-ctn">
+                    <li class="story">
+                        <span class="optional">Optional</span>
+                        <strong class="story-number">User Story 62:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to edit my user profile to update my personal information.</li>
+                        </p>
+                </ul>
+            </section>
+            <section id="assignments" class="story-section">
+                <h2 class="story-topic">Assignments</h2>
+                <ul class="story-ctn">
+                    <li class="story">
+                        <strong class="story-number">User Story 63:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to determine how a quiz is presented (multiple choice etc.)</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 64:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be reminded 2 hours before the deadline so that I don't forget to hand in a completed assignment.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 65:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to create, update and delete a quiz</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 66:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to view the evaluation of my test.</li>
+                        </p>
+                    <li class="story">
+                        <strong class="story-number">User Story 67:</strong>
+                        <p class="story-txt">
+                            As a user, I would like to be able to participate in courses and view the learning sets to see whether it is the learning set I want to learn.</li>
+                        </p>
+                </ul>
+            </section>                
+        </main>
+        <footer class="footer">
+            <article class="footer-ctn">
+                <strong class="footer-title">Git repositories</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavefrontend">Frontend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavebackend">Backend repository</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://git.bbcag.ch/inf-bl/zh/2023/projektmodul/syncwave/syncwavedocumentation">Documentation repository</a></li>
+                </ul>
+            </article>
+            <article class="footer-ctn">
+                <strong class="footer-title">Contributors</strong>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/sxpersxnic">Melvin Kampus</a></li>
+                    <li class="footer-item"><a class="footer-link" href="https://github.com/LoLo-work">Loris Vincenzo Polesana</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Nik Brönnimann</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Sebastian Meier</a></li>
+                    <li class="footer-item"><a class="footer-link" href="">Lou Wüthrich</a></li>
+                </ul>
+            </article>
+        </footer>
+    </body>

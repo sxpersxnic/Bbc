@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.signedIn {
+    display: flex;
+    margin-left: 1vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.signedOut {
+    background-color: #ff000062;
+    
+}
+
+.signedIn {
+    
+    width: auto;
+    height: auto;
+
+    border: none;
+    border-radius: 5px;
+
+}
+
+.signedIn:hover {
+    background-color: #000000;
+    height: 100%;
+}
+
+.create {
+    
+}
+
+.create:hover {
+    
+}

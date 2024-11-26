@@ -1,0 +1,24 @@
+
+
+.input {
+    bottom: 0;
+    position: fixed;
+    width: 95%;
+    left: 5%;
+    padding: 16px 32px;
+}
+
+.sendButton {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--border-radius);
+}
+
+.inputField {
+    width: 60vw;
+    height: 64px;
+    resize: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+}

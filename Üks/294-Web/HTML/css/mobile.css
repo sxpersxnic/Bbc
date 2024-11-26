@@ -1,0 +1,132 @@
+* {
+    margin-bottom: 1rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: whitesmoke;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.image-title {
+    
+    width: 70%;
+    height: auto;
+    margin-top: 10%;
+
+}
+
+.lead {
+    text-align: center;
+    font-size: 1rem;
+    color: #1b378e;
+    margin-bottom: 20%;
+
+    padding-top: 0.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.image-right {
+
+    width: 100%;
+    height: auto;
+
+    margin-right: -1rem;
+
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    float: right;
+
+}
+
+.image-left {
+
+    width: 100%;
+    height: auto;
+
+    margin-left: -1rem ;
+
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    float: left;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45%; 
+    grid-row-gap: 3%;
+}
+
+.grid-item-text {
+   text-align: center;
+   padding-top: 70px;
+   padding-left: 0.2rem;
+   padding-right: 0.3rem;
+    
+    
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.title-overlay {
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    
+}
+
+.text-overlay-right {
+
+    position: absolute;
+
+    top: 40%;
+    
+    left: 15%;
+    right: 30%;
+    
+    color: white;
+    font-size: 0.5rem;
+
+}
+
+.text-overlay-left {
+
+    position: absolute;
+
+    top: 40%;
+    
+    left: 30%;
+    right: 15%;
+
+    
+    color: white;
+    font-size: 0.5rem;
+
+}
+
+file:///C:/Development/projects/Webdesign/Qua/index.html
+
+http://localhost:5500/

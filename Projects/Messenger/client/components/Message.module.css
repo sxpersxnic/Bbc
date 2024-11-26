@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+.message {
+    background-color: cornflowerblue;
+
+    width: 80vw;
+    height: fit-content;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: small;
+    word-wrap: break-word;
+}
+.user {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: xx-small;
+    color: white;
+    text-align: start;
+    overflow: hidden;
+}

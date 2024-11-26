@@ -1,0 +1,40 @@
+
+.messageContainer {
+    padding-top: 5%;
+    position: sticky;
+    display: flex;
+    width: 95%;
+    left: 7.5%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message {
+    width: max-content;
+    max-width: 50%;
+    margin: 16px;
+    padding-left: 32px;
+    line-break: anywhere;
+}
+
+.messageOwn {
+    width: max-content;
+    max-width: 50%;
+    margin: 16px;
+    padding-right: 32px;
+    text-align: end;
+    align-self: flex-end;
+    line-break: anywhere;
+}
+
+.author {
+    font-size: 14px;
+}
+
+.content {
+    padding: 8px;
+}
+
+.contentOwn {
+    padding: 8px;
+}
